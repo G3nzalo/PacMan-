@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 #include "Collider.h"
+#include "Animation.h"
 
 
 
@@ -17,12 +18,11 @@ public:
 	Collider GetCollider();
 
 
-
 private:
 	sf::RectangleShape body;
-	
+	Animation animation;
 	unsigned int row;
 	float speed;
-	bool faceRight;	
+	bool faceRight;
 };
 
